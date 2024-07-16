@@ -1,0 +1,11 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Debug",
+      "type": "PowerShell",
+      "request": "launch",
+      "script": "${workspaceFolder}\\test-local.ps1"
+    }
+  ]
+}

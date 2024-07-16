@@ -1,5 +1,5 @@
-name: Add signtool to PATH
-description: Find's the latest version of signtool.exe installed and adds it to the runner's PATH
+name: Add Signtool Action
+description: Locates the latest version of Microsoft's signtool installed and adds it to the runner's PATH
 author: KamaranL
 branding:
   icon: terminal
