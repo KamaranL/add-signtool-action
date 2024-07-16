@@ -1,1 +1,1 @@
-# install-signtool-action
+# add-signtool-action

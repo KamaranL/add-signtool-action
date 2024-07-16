@@ -1,0 +1,15 @@
+name: Add signtool to PATH
+description: Find's the latest version of signtool.exe installed and adds it to the runner's PATH
+author: KamaranL
+branding:
+  icon: terminal
+  color: blue
+
+runs:
+  using: composite
+  steps:
+    - run: '& $env:GITHUB_ACTION_PATH/Pre.ps1'
+      shell: pwsh
+
+    - run: '& $env:GITHUB_ACTION_PATH/Main.ps1'
+      shell: pwsh
