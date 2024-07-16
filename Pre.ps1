@@ -10,6 +10,7 @@ if ($env:RUNNER_OS -ne 'Windows') {
     exit 1
 }
 
+Write-Output '- Checking runner architecture'
 if ($env:RUNNER_ARCH -notin @('X86', 'X64', 'ARM', 'ARM64')) {
     Write-Output "::error::$Action does not support your machine's architecture."
     exit 1

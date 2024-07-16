@@ -17,9 +17,9 @@ try {
     if (!($Tool)) {throw [System.IO.FileNotFoundException]::new('File not found.', 'signtool.exe')}
 
     'Adding signtool to PATH'
-    $Tool.FullName | Out-File $env:GITHUB_PATH -Append
+    $Tool.Directory.FullName | Out-File $env:GITHUB_PATH -Append
     "signtool-$Arch=$($Tool.FullName)" | Out-File $env:GITHUB_OUTPUT -Append
-    $env:PATH = "$($Tool.FullName);$env:PATH"
+    $env:PATH = "$($Tool.Directory.FullName);$env:PATH"
 
     signtool.exe /h
 } catch {
